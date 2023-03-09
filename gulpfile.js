@@ -5,7 +5,7 @@ const concat = require("gulp-concat");
 const uglify = require("gulp-uglify-es").default;
 const browserSync = require("browser-sync").create();
 const autoprefixer = require("gulp-autoprefixer");
-const gulpClean = require("gulp-clean");
+const clean = require("gulp-clean");
 
 function scripts() {
   return src([
