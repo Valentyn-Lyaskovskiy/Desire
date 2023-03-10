@@ -1,15 +1,38 @@
 @import "reset";
 @import "global";
+@import "vars";
 
 .header {
-  min-height: 120px;
-  align-items: center;
   &__inner {
+    min-height: 120px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  &__btn {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
   }
 }
 
-.menu__list {
-  display: flex;
+.logo {
+  margin: 0 auto;
+}
+
+.menu {
+  padding-left: 35px;
+  padding-right: 60px;
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 80px;
+  }
+  &__list-item-link {
+    @extend %title-font;
+    line-height: 137.5%; /* 22px/16 */
+    color: rgba(54, 56, 56, 0.902);
+  }
 }
