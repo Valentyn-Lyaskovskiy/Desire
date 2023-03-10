@@ -1,6 +1,8 @@
+@import "vars";
 @import "reset";
 @import "global";
-@import "vars";
+
+//                   Header
 
 .header {
   &__inner {
@@ -36,3 +38,32 @@
     color: rgba(54, 56, 56, 0.902);
   }
 }
+
+//                         Footer
+
+.footer {
+  &__content {
+    background: #dfdfdf;
+    padding: 60px 0 80px;
+    display: flex;
+  }
+  &__copyright {
+    background: $title;
+    line-height: 175%;
+    padding: 42px 0 41px;
+    text-align: center;
+    color: #a1a1a1;
+  }
+  &__title{
+    color: $title;
+    @extend %title-font;
+    line-height: 144%;
+    font-size: inherit;
+    margin-bottom: 14px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
