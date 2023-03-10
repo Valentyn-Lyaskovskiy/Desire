@@ -1,3 +1,15 @@
+@import "reset";
+@import "global";
 
+.header {
+  min-height: 120px;
+  align-items: center;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
-
+.menu__list {
+  display: flex;
+}
