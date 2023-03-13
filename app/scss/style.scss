@@ -58,7 +58,6 @@
     color: $title;
     @extend %title-font;
     line-height: 144%;
-    font-size: inherit;
     margin-bottom: 14px;
   }
   &__inner{
