@@ -51,7 +51,8 @@
     margin-right: 99px;
   }
   &__menu {
-    margin-right: 91px;
+    margin-right: 25px;
+    width: 125px;
   }
   &__form-inp {
     border-radius: 21px;
@@ -69,7 +70,18 @@
     font-size: 16px;
     line-height: 175%; /* 28px/16 */
   }
+  &__email::before {
+    position: absolute;
+    background-image: url(../images/envelope.svg);
+    top: 8px;
+    left: 0;
+    content: "";
+    width: 16px;
+    height: 12px;
+  }
   &__email {
+    padding-left: 30px;
+    position: relative;
     margin-bottom: 23px;
     display: inline-block;
     font-family: "Open Sans";
@@ -100,8 +112,27 @@
     display: flex;
     justify-content: space-between;
   }
+  &__social-link {
+    position: relative;
+    padding-left: 28px;
+  }
+  &__social-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 6px;
+  }
+  &__social-link,
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #707070;
+  }
   &__social {
     margin-right: 176px;
+    width: 125px;
   }
   &__form-btn {
     display: inline-block;
@@ -119,5 +150,34 @@
     margin-left: 9px;
     cursor: pointer;
     border: none;
+  }
+  &__social-link_facebook::before {
+    background-image: url(../images/facebook.svg);
+    width: 16px;
+    height: 16px;
+    top: 5px;
+  }
+  &__social-link_instagram::before {
+    background-image: url(../images/instagram.svg);
+    width: 14px;
+    height: 15px;
+    top: 7px;
+  }
+  &__social-link_pinterest::before {
+    background-image: url(../images/Pinterest.svg);
+    width: 16px;
+    height: 16px;
+    top: 5px;
+  }
+  &__social-link_whatsApp::before {
+    background-image: url(../images/whatsapp.svg);
+    width: 14px;
+    height: 14px;
+  }
+  &__social-link_youtube::before {
+    background-image: url(../images/youtube.svg);
+    width: 18px;
+    height: 12px;
+    top: 7px;
   }
 }
