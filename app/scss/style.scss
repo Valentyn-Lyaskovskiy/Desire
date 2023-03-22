@@ -47,6 +47,38 @@
     padding: 60px 0 80px;
     display: flex;
   }
+  &__contact {
+    margin-right: 99px;
+  }
+  &__menu {
+    margin-right: 91px;
+  }
+  &__form-inp {
+    border-radius: 21px;
+    padding: 6px 10px 6px 18px;
+    background-color: transparent;
+    /* opacity: 0.7; use another option below, to avoid fading for all input*/
+    border: 1px solid rgba($title, 0.7);
+    width: 368px;
+  }
+  &__::placeholder {
+    color: #a1a1a1;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%; /* 28px/16 */
+  }
+  &__email {
+    margin-bottom: 23px;
+    display: inline-block;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    color: #363838;
+  }
   &__copyright {
     background: $title;
     line-height: 175%;
@@ -54,15 +86,38 @@
     text-align: center;
     color: #a1a1a1;
   }
-  &__title{
+  &__title {
     color: $title;
     @extend %title-font;
     line-height: 144%;
     margin-bottom: 14px;
   }
-  &__inner{
+  &__text {
+    max-width: 476px;
+    margin-bottom: 16px;
+  }
+  &__inner {
     display: flex;
     justify-content: space-between;
   }
+  &__social {
+    margin-right: 176px;
+  }
+  &__form-btn {
+    display: inline-block;
+    width: 160px;
+    background: $title;
+    border-radius: 21px;
+    padding: 6px 12px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #fffff0;
+    margin-left: 9px;
+    cursor: pointer;
+    border: none;
+  }
 }
-
