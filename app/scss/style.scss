@@ -191,9 +191,10 @@
   max-width: 694px;
   padding-top: 40px;
   background-color: #fff;
-  transition: all .3s ease;
-  &.right-side-menu_close{
-    transform: translateX(1000%);
+  transition: all 0.3s ease;
+  box-shadow: 0px 1px 4px #000;
+  &.right-side-menu_close {
+    transform: translateX(500%);
   }
   &__btn {
     background: none;
@@ -215,16 +216,28 @@
   &__title {
     @extend %title-font;
     font-style: normal;
-    font-weight: 700;
     font-size: 36px;
     line-height: 51px;
     color: $title;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      max-width: 252px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 1px;
+      background-color: #6d7278;
+    }
   }
-  &__text{
+  &__text {
     margin-bottom: 75px;
   }
-  &__img{
+  &__img {
     max-width: 485px;
   }
 }
