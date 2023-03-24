@@ -244,3 +244,32 @@
     max-width: 485px;
   }
 }
+
+// Top
+
+.top {
+  &__slider-item {
+    display: flex;
+  }
+  &__slider-info {
+    max-width: 635px;
+  }
+  &__title {
+    font-size: 110px;
+    line-height: 134px;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    color: $title;
+    @extend %title-font;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 185px;
+      background: #6d7278;
+      height: 1px;
+    }
+  }
+}
