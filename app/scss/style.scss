@@ -248,11 +248,23 @@
 // Top
 
 .top {
+  &__inner {
+    padding-bottom: 70px;
+  }
   &__slider-item {
-    display: flex;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  &__slider-item img {
+    margin-left: -16%;
+    max-width: 703px;
+    height: 815px;
+    object-fit: cover;
   }
   &__slider-info {
     max-width: 635px;
+    margin-left: 25px;
   }
   &__title {
     font-size: 110px;
@@ -271,5 +283,8 @@
       background: #6d7278;
       height: 1px;
     }
+  }
+  &__text {
+    max-width: 585px;
   }
 }
