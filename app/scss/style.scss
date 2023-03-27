@@ -1,0 +1,309 @@
+@import "vars";
+@import "reset";
+@import "global";
+
+//                   Header
+
+.header {
+  background: #fff;
+  &__inner {
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__btn {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.menu {
+  padding-left: 35px;
+  padding-right: 60px;
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 80px;
+  }
+  &__list-item-link {
+    @extend %title-font;
+    line-height: 137.5%; /* 22px/16 */
+    color: rgba(54, 56, 56, 0.902);
+  }
+}
+
+//                         Footer
+
+.footer {
+  &__content {
+    background: #dfdfdf;
+    padding: 60px 0 80px;
+    display: flex;
+  }
+  &__contact {
+    margin-right: 99px;
+  }
+  &__menu {
+    margin-right: 25px;
+    width: 125px;
+  }
+  &__form {
+    display: flex;
+  }
+  &__form-inp {
+    border-radius: 21px;
+    padding: 6px 10px 6px 18px;
+    background-color: transparent;
+    /* opacity: 0.7; use another option below, to avoid fading for all input*/
+    border: 1px solid rgba($title, 0.7);
+    width: 100%;
+  }
+  &__::placeholder {
+    color: #a1a1a1;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%; /* 28px/16 */
+  }
+  &__email::before {
+    position: absolute;
+    background-image: url(../images/envelope.svg);
+    top: 8px;
+    left: 0;
+    content: "";
+    width: 16px;
+    height: 12px;
+  }
+  &__email {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 23px;
+    display: inline-block;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    color: #363838;
+  }
+  &__copyright {
+    background: $title;
+    line-height: 175%;
+    padding: 42px 0 41px;
+    text-align: center;
+    color: #a1a1a1;
+  }
+  &__title {
+    color: $title;
+    @extend %title-font;
+    line-height: 144%;
+    margin-bottom: 14px;
+  }
+  &__text {
+    max-width: 476px;
+    margin-bottom: 16px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__social-link {
+    position: relative;
+    padding-left: 28px;
+  }
+  &__social-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 6px;
+  }
+  &__social-link,
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #707070;
+  }
+  &__social {
+    margin-right: 176px;
+    width: 125px;
+  }
+  &__form-btn {
+    display: inline-block;
+    width: 160px;
+    background: $title;
+    border-radius: 21px;
+    padding: 6px 12px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #fffff0;
+    margin-left: 9px;
+    cursor: pointer;
+    border: none;
+  }
+  &__social-link_facebook::before {
+    background-image: url(../images/facebook.svg);
+    width: 16px;
+    height: 16px;
+    top: 5px;
+  }
+  &__social-link_instagram::before {
+    background-image: url(../images/instagram.svg);
+    width: 14px;
+    height: 15px;
+    top: 7px;
+  }
+  &__social-link_pinterest::before {
+    background-image: url(../images/Pinterest.svg);
+    width: 16px;
+    height: 16px;
+    top: 5px;
+  }
+  &__social-link_whatsApp::before {
+    background-image: url(../images/whatsapp.svg);
+    width: 14px;
+    height: 14px;
+  }
+  &__social-link_youtube::before {
+    background-image: url(../images/youtube.svg);
+    width: 18px;
+    height: 12px;
+    top: 7px;
+  }
+}
+
+.right-side-menu {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  max-width: 694px;
+  padding-top: 40px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0px 1px 4px #000;
+  &.right-side-menu_close {
+    transform: translateX(500%);
+  }
+  &__btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-bottom: 60px;
+  }
+  &__content {
+    text-align: center;
+    max-width: 485px;
+    margin: 0 auto;
+  }
+  &__link {
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  &__title {
+    @extend %title-font;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: $title;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      max-width: 252px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 1px;
+      background-color: #6d7278;
+    }
+  }
+  &__text {
+    margin-bottom: 75px;
+  }
+  &__img {
+    max-width: 485px;
+  }
+}
+
+// Top
+
+.top {
+  &__inner {
+    position: relative;
+    padding-bottom: 70px;
+  }
+  &::after{
+    position: absolute;
+    content: '';
+    background-image:url(../images/top__bg.jpg);
+    height: 722px;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+  }
+  &__slider-item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  &__slider-item-img {
+    margin-left: -16%;
+    max-width: 703px;
+    height: 815px;
+    object-fit: cover;
+  }
+  &__slider-info {
+    max-width: 635px;
+    margin-left: 25px;
+  }
+  &__title {
+    font-size: 110px;
+    line-height: 134px;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    color: $title;
+    @extend %title-font;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 185px;
+      background: #6d7278;
+      height: 1px;
+    }
+  }
+  &__text {
+    max-width: 585px;
+  }
+}
+
+//      New
+
+.container-fluid{
+  margin: 0 auto;
+  max-width: 1929px;
+  padding: 0 10px;
+}
