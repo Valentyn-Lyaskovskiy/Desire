@@ -253,10 +253,10 @@
     position: relative;
     padding-bottom: 70px;
   }
-  &::after{
+  &::after {
     position: absolute;
-    content: '';
-    background-image:url(../images/top__bg.jpg);
+    content: "";
+    background-image: url(../images/top__bg.jpg);
     height: 722px;
     width: 100%;
     top: 0;
@@ -302,8 +302,90 @@
 
 //      New
 
-.container-fluid{
+.container-fluid {
   margin: 0 auto;
-  max-width: 1929px;
+  max-width: 1920px;
   padding: 0 10px;
+}
+
+.new {
+  padding-bottom: 104px;
+  &__title {
+    position: relative;
+    text-align: center;
+    color: $title;
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    &::after {
+      position: absolute;
+      height: 1px;
+      content: "";
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      max-width: 250px;
+      background: #6d7278;
+      margin: 0 auto;
+    }
+  }
+  &__collection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+  &__collection-item {
+    position: relative;
+  }
+  &__collection-img {
+    min-height: 350px;
+    object-fit: cover;
+  }
+  &__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: rgba(#fff, 0.6);
+    padding: 5px;
+  }
+  &__text {
+    text-align: center;
+    max-width: 730px;
+    margin: 0 auto 27px;
+  }
+  &__info-title {
+    position: relative;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    font-size: 20px;
+    line-height: 25px;
+    color: $title;
+    @extend %title-font;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 88%;
+      background: #6d7278;
+      height: 1px;
+      margin: 0 auto;
+    }
+  }
+  &__info-text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #707070;
+  }
 }
