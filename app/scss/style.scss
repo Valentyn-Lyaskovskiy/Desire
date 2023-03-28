@@ -339,6 +339,11 @@
   }
   &__collection-item {
     position: relative;
+    &:hover{
+      .new__info{
+        opacity: 1;
+      }
+    }
   }
   &__collection-img {
     min-height: 350px;
@@ -357,6 +362,8 @@
     margin: 0 auto;
     background: rgba(#fff, 0.6);
     padding: 5px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
   }
   &__text {
     text-align: center;
@@ -388,4 +395,41 @@
     font-size: 14px;
     color: #707070;
   }
+}
+
+//    Decor
+
+.decor{
+  padding: 173px 0 156px;
+  background-image: url(../images/decor.jpg);
+  &__title{
+    position: relative;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    font-size: 60px;
+    line-height: 80px;
+    color: $title;
+    @extend %title-font;
+    &:after{
+      position: absolute;
+      content: '';
+      background: #6D7278;
+      border-radius: 0.5px;
+      height: 1px;
+      bottom: 0;
+      max-width: 200px;
+      left: 0;
+      right: 0;
+    }
+  }
+  &__text,
+  &__title{
+    max-width: 540px;
+  }
+}
+
+//    How
+
+.how{
+  margin: 81px 0 106px;
 }
