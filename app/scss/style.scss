@@ -491,7 +491,7 @@
   &__h6_padding {
     padding: 14px 0 0 0;
   }
-  &__item_measurement p{
+  &__item_measurement p {
     text-align: left;
   }
   &__item_measurement,
@@ -525,5 +525,36 @@
   }
   &__text {
     margin-top: 13px;
+  }
+}
+
+//    Gallery
+
+.gallery {
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  &__btn + .gallery__btn {
+    margin-left: 25px;
+  }
+  &__btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #8f8d8d;
+    border: 1px solid rgba(#454647, 0.5);
+    border-radius: 20px;
+    padding: 6px 16px;
+    background: none;
+    cursor: pointer;
+  }
+  &__btn_active {
+    background: rgba(#ffef35, 0.5);
+    color: $title;
+    opacity: 1;
+    border: none;
   }
 }
