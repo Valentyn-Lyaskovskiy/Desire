@@ -491,9 +491,14 @@
   &__h6_padding {
     padding: 14px 0 0 0;
   }
+  &__item_measurement p{
+    text-align: left;
+  }
   &__item_measurement,
   &__text_special {
     max-width: 226px;
+    margin-left: auto;
+    text-align: end;
   }
   &__item {
     width: 250px;
