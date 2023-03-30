@@ -435,12 +435,12 @@
   &__box {
     display: flex;
     align-items: start;
-    border-bottom: 2px solid rgba($title, 0.6);
+    border-bottom: 2px solid rgba($title, 0.7);
     position: relative;
     &::before {
       position: absolute;
       content: "";
-      bottom: -5px;
+      bottom: -6px;
       left: 0;
       width: 10px;
       height: 10px;
@@ -450,18 +450,39 @@
     &::after {
       position: absolute;
       content: "";
-      bottom: 0;
-      left: 0;
+      bottom: -13px;
+      left: 26.5%;
       width: 20px;
       height: 2px;
-      background: $title;
+      background: rgba($title, 0.7);
       transform: rotate(90deg);
     }
   }
   &__box-second {
+    position: relative;
     display: flex;
     align-items: baseline;
     padding-left: 306px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: -6px;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      background: $title;
+      border-radius: 50%;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      top: -13px;
+      right: 47%;
+      width: 20px;
+      height: 2px;
+      background: rgba($title, 0.7);
+      transform: rotate(90deg);
+    }
   }
   &__item_delivery {
     margin-left: 328px;
@@ -495,7 +516,7 @@
     line-height: 23px;
     @extend %title-font;
     color: $title;
-    margin-left: 13px;
+    margin-left: 6px;
   }
   &__text {
     margin-top: 13px;
