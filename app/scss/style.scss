@@ -41,6 +41,28 @@
   }
 }
 
+//      Breadcrumbs
+
+.breadcrumbs {
+  background: rgba(#dfdfdf, 0.5);
+  padding: 13px 14px;
+  &__list {
+    display: flex;
+  }
+  &__item::after {
+    content: "/";
+    margin-left: -4px;
+    margin-right: 4px;
+  }
+  &__item:last-child::after {
+    display: none;
+  }
+  &__link {
+    color: $default;
+    font-size: 14px;
+  }
+}
+
 //                         Footer
 
 .footer {
@@ -198,6 +220,7 @@
   background-color: #fff;
   transition: all 0.3s ease;
   box-shadow: 0px 1px 4px #000;
+  z-index: 2;
   &.right-side-menu_close {
     transform: translateX(500%);
   }
