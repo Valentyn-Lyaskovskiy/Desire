@@ -580,12 +580,39 @@
 //    More
 
 .more {
-  margin-bottom: 47px;
+  margin-bottom: 100px;
   &__title {
     max-width: 430px;
     font-size: 36px;
     line-height: 51px;
     text-align: center;
+    color: $title;
+    @extend %title-font;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__h4 {
+    margin-top: 7px;
+  }
+  &__theme,
+  &__author,
+  &__span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    color: #707070;
+  }
+  &__title-link {
+    font-size: 24px;
+    line-height: 38px;
     color: $title;
     @extend %title-font;
   }
