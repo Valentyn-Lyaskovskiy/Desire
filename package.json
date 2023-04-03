@@ -9,6 +9,7 @@
   "author": "Valentyn Lyaskovskiy",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "github:fancyapps/fancybox",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
