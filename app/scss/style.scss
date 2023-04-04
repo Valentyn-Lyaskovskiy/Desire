@@ -658,6 +658,7 @@
 //   About
 
 .about {
+  padding-bottom: 100px;
   &__box {
     background-image: url(../images/about.jpg);
     background-repeat: no-repeat;
@@ -711,5 +712,78 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+//   Inspiration
+
+.inspiration {
+  position: relative;
+  margin-bottom: 10px;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/inspiration-bg.jpg);
+    min-height: 360px;
+    z-index: -1;
+  }
+  &__line {
+    height: 2px;
+    background-color: $title;
+    border-radius: 4px;
+    margin-top: -2px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    max-width: 824px;
+  }
+  &__img {
+    margin-right: 78px;
+    margin-left: -230px;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 60px;
+    color: $title;
+    @extend %title-font;
+    padding-bottom: 15.5px;
+    margin-bottom: 23.5px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      height: 2px;
+      background: #6d7278;
+      border-radius: 1px;
+    }
+  }
+  &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #fff;
+  }
+  &__info,
+  &__number {
+    line-height: 23px;
+    color: $title;
+    @extend %title-font;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__item {
+    margin-bottom: 33px;
   }
 }
