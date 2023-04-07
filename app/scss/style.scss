@@ -569,8 +569,22 @@
 
 //    Gallery
 
+.gallery_gallery {
+  margin: 83px 0 148px;
+}
+
 .gallery {
-  margin-bottom: 90px;
+  &.gallery_gallery {
+    .gallery__item img {
+      max-height: 1165px;
+    }
+  }
+  &.gallery_gallery {
+    .gallery__item:nth-child(8) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -618,7 +632,7 @@
 //    More
 
 .more {
-  margin-bottom: 100px;
+  margin: 93px 0 88px;
   &__title {
     max-width: 430px;
     font-size: 36px;
@@ -791,15 +805,13 @@
 
 //   Partners
 
-.partners{
+.partners {
   padding: 32px 0 54px;
-  &__items{
+  &__items {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
-  &__item{
+  &__item {
     margin: 0 auto;
   }
 }
-
-
