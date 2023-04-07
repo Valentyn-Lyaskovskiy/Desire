@@ -58,6 +58,8 @@
 //      Breadcrumbs
 
 .breadcrumbs {
+  position: relative;
+  z-index: 11;
   background: rgba(#dfdfdf, 0.5);
   padding: 13px 14px;
   &__list {
@@ -814,4 +816,11 @@
   &__item {
     margin: 0 auto;
   }
+}
+
+//   Contact
+
+.map{
+  margin-top: -55px;
+  margin-bottom: 55px;
 }
