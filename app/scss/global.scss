@@ -56,3 +56,25 @@ body {
     }
   }
 }
+
+.info-email {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 23px;
+  display: inline-block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #363838;
+  &::before {
+    position: absolute;
+    background-image: url(../images/envelope.svg);
+    top: 8px;
+    left: 0;
+    content: "";
+    width: 16px;
+    height: 12px;
+  }
+}

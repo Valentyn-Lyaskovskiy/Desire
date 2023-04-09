@@ -113,27 +113,6 @@
     font-size: 16px;
     line-height: 175%; /* 28px/16 */
   }
-  &__email::before {
-    position: absolute;
-    background-image: url(../images/envelope.svg);
-    top: 8px;
-    left: 0;
-    content: "";
-    width: 16px;
-    height: 12px;
-  }
-  &__email {
-    padding-left: 30px;
-    position: relative;
-    margin-bottom: 23px;
-    display: inline-block;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 28px;
-    color: #363838;
-  }
   &__copyright {
     background: $title;
     line-height: 175%;
@@ -820,7 +799,46 @@
 
 //   Contact
 
-.map{
+.map {
   margin-top: -55px;
   margin-bottom: 55px;
+}
+
+.contact {
+  margin-bottom: 100px;
+  &__title {
+    position: relative;
+    margin-bottom: 40px;
+    margin-right: 79px;
+    padding-bottom: 30px;
+    font-size: 36px;
+    line-height: 60px;
+    color: $title;
+    @extend %title-font;
+    &::after {
+      background: #6d7278;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      width: 200px;
+      content: "";
+      bottom: 0;
+    }
+  }
+  .contact__list {
+    padding-left: 284px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__item + .contact__item {
+    padding-left: 40px;
+  }
+  &__box,
+  &__form {
+    padding-left: 284px;
+  }
+  &__text {
+    margin-bottom: 10px;
+  }
 }
