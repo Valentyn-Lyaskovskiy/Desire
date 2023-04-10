@@ -805,7 +805,6 @@
 }
 
 .contact {
-  margin-bottom: 100px;
   &__title {
     position: relative;
     margin-bottom: 40px;
@@ -840,45 +839,45 @@
   }
   &__text {
     margin-bottom: 10px;
-    color: #A1A1A1;
+    color: #a1a1a1;
   }
-  &__phone{
+  &__phone {
     color: $default;
   }
-  &__street{
+  &__street {
     margin-bottom: 16px;
   }
-  &__form{
+  &__form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  &__text-area{
+  &__text-area {
     width: 100%;
     min-height: 125px;
     padding: 14px 17px;
     margin-bottom: 20px;
-    border: 1px solid #DFDFDF;
+    border: 1px solid #dfdfdf;
     border-radius: 24px;
     resize: none;
-    &::placeholder{
-      color: #A1A1A1;
+    &::placeholder {
+      color: #a1a1a1;
     }
   }
-  &__inp{
+  &__inp {
     margin-bottom: 13px;
-    border: 1px solid #DFDFDF;
+    border: 1px solid #dfdfdf;
     border-radius: 20px;
     padding: 6px 17px;
     width: 407px;
-    &::placeholder{
-      color: #A1A1A1;
+    &::placeholder {
+      color: #a1a1a1;
     }
   }
-  &__inp + .contact__inp{
+  &__inp + .contact__inp {
     margin-left: 11px;
   }
-  &__btn{
+  &__btn {
     display: block;
     border-radius: 21px;
     background-color: $title;
@@ -890,5 +889,39 @@
     border: none;
     cursor: pointer;
   }
+  &__slider {
+  margin-bottom: 100px;
+  }
+  &__slider-link {
+    position: relative;
+    margin-bottom: 35px;
+    &:hover {
+      .contact__slider-text {
+        opacity: 1;
+      }
+    }
+  }
+  &__slider-text {
+    position: absolute;
+    transition: all .5s ease;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 6px;
+    opacity: 0;
+    background: rgba(#fff, 0.6);
+    color: $title;
+    @extend %title-font;
+    line-height: 22px;
+  }
+  &__slider-img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+  }
 }
-
