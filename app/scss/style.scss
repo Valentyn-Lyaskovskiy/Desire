@@ -202,6 +202,11 @@
     height: 12px;
     top: 7px;
   }
+  &__social-link_twitter::before {
+    background-image: url(../images/twitter.svg);
+    width: 16px;
+    height: 14px;
+  }
 }
 
 .right-side-menu {
@@ -890,7 +895,7 @@
     cursor: pointer;
   }
   &__slider {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
   }
   &__slider-link {
     position: relative;
@@ -903,7 +908,7 @@
   }
   &__slider-text {
     position: absolute;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     top: 0;
     bottom: 0;
     left: 0;
@@ -923,5 +928,49 @@
     width: 170px;
     height: 170px;
     object-fit: cover;
+  }
+}
+
+//    Blog
+
+.blog {
+  padding: 59px 0 66px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__aside {
+    width: 350px;
+    margin-left: 30px;
+  }
+  &__social-item {
+    margin-bottom: 20px;
+  }
+  &__form {
+    position: relative;
+    margin-bottom: 44px;
+  }
+  &__input {
+    padding: 6px 45px 6px 18px;
+    border: 1px solid rgba($title, 0.7);
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 28px;
+      color: #a1a1a1;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  &__btn {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 10px;
+    right: 13px;
+    cursor: pointer;
   }
 }
