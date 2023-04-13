@@ -973,4 +973,66 @@
     right: 13px;
     cursor: pointer;
   }
+  &__recent {
+    margin-bottom: 40px;
+  }
+  &__title,
+  &__title-recent {
+    font-size: 16px;
+    line-height: 23px;
+    color: $title;
+    @extend %title-font;
+    margin-bottom: 14px;
+  }
+  &__title-recent {
+    margin-bottom: 24px;
+  }
+  &__link,
+  &__recent-link {
+    font-size: 16px;
+    line-height: 27px;
+    color: #5a5a5a;
+  }
+  &__categories {
+    margin-bottom: 34px;
+  }
+  &__recent-item {
+    margin-bottom: 10px;
+  }
+  &__recent-link {
+    display: flex;
+  }
+  &__link {
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+  &__recent-span,
+  &__recent-author {
+    font-size: 14px;
+    line-height: 28px;
+    color: #a1a1a1;
+  }
+  &__tags {
+    margin-bottom: 41px;
+  }
+  &__tags-link {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #8f8d8d;
+    border: 1px solid rgba(#454647, 0.5);
+    border-radius: 14px;
+    padding: 0 15px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  &__tags-link_margin-zero {
+    margin-left: 0;
+  }
+  &__social{
+    display: flex;
+    gap: 20px;
+  }
 }
