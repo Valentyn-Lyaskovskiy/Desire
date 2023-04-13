@@ -1014,6 +1014,7 @@
   }
   &__tags {
     margin-bottom: 41px;
+    width: 362px;
   }
   &__tags-link {
     margin-bottom: 10px;
@@ -1024,12 +1025,9 @@
     color: #8f8d8d;
     border: 1px solid rgba(#454647, 0.5);
     border-radius: 14px;
-    padding: 0 15px;
+    padding: 0 16px;
     display: inline-block;
-    margin-left: 10px;
-  }
-  &__tags-link_margin-zero {
-    margin-left: 0;
+    margin-right: 10px;
   }
   &__social{
     display: flex;
