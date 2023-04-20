@@ -1051,6 +1051,10 @@
     @extend %title-font;
     margin-bottom: 6px;
   }
+  &__info-title_main {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
   &__bq {
     background: rgba(223, 223, 223, 0.5);
     padding: 54px 58px;
@@ -1081,6 +1085,19 @@
       border-radius: 1px;
       width: 200px;
       margin: 0 auto;
+    }
+  }
+  &__bq-author_main {
+    text-align: left;
+    position: relative;
+    font-size: 16px;
+    line-height: 23px;
+    color: $title;
+    @extend %title-font;
+    &::before {
+      position: absolute;
+      margin: 0;
+      width: 177px;
     }
   }
   &__left-item {
@@ -1121,6 +1138,12 @@
   }
   &__pagination-link_active {
     color: $title;
+  }
+  &__bq_main {
+    background: none;
+    text-align: left;
+    padding: 40px 22px 0 22px;
+    margin-bottom: 30px;
   }
 }
 
