@@ -19,6 +19,9 @@
     cursor: pointer;
     padding: 0;
   }
+  &__btn-menu {
+    display: none;
+  }
 }
 
 .logo {

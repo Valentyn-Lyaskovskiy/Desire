@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+  .menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .menu__list-item + .menu__list-item {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .menu__list-item-link {
+    padding-right: 10px;
+  }
+  .logo {
+    order: -1;
+  }
+  .menu__list-item + .menu__list-item {
+    padding-left: 0;
+  }
+  .header__btn-menu {
+    border: none;
+    background: transparent;
+    display: block;
+  }
+  .header__btn-menu span {
+    background-color: $title;
+    width: 37px;
+    height: 3px;
+    border: radius 4px;
+    display: block;
+    margin-bottom: 6px;
+  }
+}
