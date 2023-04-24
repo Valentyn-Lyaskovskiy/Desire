@@ -1,3 +1,12 @@
+@media (max-width: 970px) {
+  .footer__contact {
+    margin-right: 42px;
+  }
+  .footer__social {
+    margin-right: 56px;
+  }
+}
+
 @media (max-width: 768px) {
   .header__btn {
     display: none;
@@ -8,6 +17,12 @@
   }
   .menu__list-item + .menu__list-item {
     padding-left: 40px;
+  }
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+  .footer__contact {
+    margin-bottom: 32px;
   }
 }
 

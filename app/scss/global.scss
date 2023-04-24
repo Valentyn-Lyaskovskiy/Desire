@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
   line-height: 168.75%; /* 27px/16 */
   font-weight: 400;
   color: $default;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   min-width: 300px;
 }
 
